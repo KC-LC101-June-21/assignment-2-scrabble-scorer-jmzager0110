@@ -41,7 +41,7 @@ function initialPrompt() {
 
 function simpleScore(userWord) {
   let letterPoints = 0;
-  for (let i = 0; i < word.length; i++){ 
+  for (let i = 0; i < userWord.length; i++){ 
     letterPoints += 1;	
 	}
   return letterPoints;
@@ -51,7 +51,7 @@ function vowelBonusScore(userWord) {
   let letterPoints = 0;
   let vowelLetters = ['A','E','I','O','U','Y'];
   for (let i = 0; i < word.length; i++ ) {
-    if (vowelLetters.includes(word[i])) {
+    if (vowelLetters.includes(userWord[i])) {
       letterPoints += 3;
     } else {
       letterPoints += 1;
@@ -63,8 +63,8 @@ return letterPoints;
 function scrabbleScore(userWord) {
   let letterPoints = 0;
   let word = userWord.toLowerCase();
-  for (let i = 0; i < word.length; i++) {
-    letterPoints += newPointStructure[word[i]];
+  for (let i = 0; i < userWord.length; i++) {
+    letterPoints += newPointStructure[userWord[i]];
        } 
      
    return letterPoints;
