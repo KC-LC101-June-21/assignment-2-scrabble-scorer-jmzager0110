@@ -74,7 +74,7 @@ const scoringAlgorithms = [
 
  {  
     name: "Simple Score",
-    description: "Each letter is woth 1 point.",
+    description: "Each letter is worth 1 point.",
     scoreFunction: simpleScore
   },
 
