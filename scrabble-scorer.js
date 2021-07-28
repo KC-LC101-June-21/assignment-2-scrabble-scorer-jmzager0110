@@ -49,9 +49,9 @@ function simpleScore(userWord) {
 
 function vowelBonusScore(userWord) {
   let letterPoints = 0;
-  let vowelLetters = ['A','E','I','O','U','Y'];
+  let vowelLetters = ['A','E','I','O','U'];
   for (let i = 0; i < userWord.length; i++ ) {
-    if (vowelLetters.includes(userWord[i])) {
+    if (vowelLetters.includes(userWord[i].toUpperCase())) {
       letterPoints += 3;
     } else {
       letterPoints += 1;
